@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Adventure</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('zoo-hero.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    /* Animal Section */
+    .animals {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .animals h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .animal-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .animal {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .animal img {
+      width: 100%;
+      height: auto;
+    }
+
+    .animal h3 {
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0.5rem 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zoo Adventure</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#animals">Animals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Zoo Adventure</h2>
+    <p>Experience wildlife from around the world!</p>
+  </section>
+
+  <section class="animals" id="animals">
+    <h2>Our Animal Kingdom</h2>
+    <div class="animal-gallery">
+      <div class="animal">
+        <img src="lion.jpg" alt="Lion">
+        <h3>Lion</h3>
+      </div>
+      <div class="animal">
+        <img src="elephant.jpg" alt="Elephant">
+        <h3>Elephant</h3>
+      </div>
+      <div class="animal">
+        <img src="giraffe.jpg" alt="Giraffe">
+        <h3>Giraffe</h3>
+      </div>
+      <div class="animal">
+        <img src="panda.jpg" alt="Panda">
+        <h3>Panda</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Zoo Adventure. All rights reserved.</p>
+  </footer>
+</body>
+</html>
